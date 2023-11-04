@@ -1,0 +1,59 @@
+.ad-details {
+    width: 30rem;
+    padding: 10px;
+    border-radius: 10px;    
+    border: 1px solid $grey;
+    height: auto;
+    overflow: auto;
+
+    .ad-details-header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title {
+            @extend .title;
+        }
+
+        .buttons-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            height: 40px;
+
+            .cancel-button {
+                background: $red;
+            }
+        }
+    }
+
+    .job-description-chips-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+
+        .job-description-chips {
+            display: flex;
+            gap: 10px;
+
+            .job-description-chip {
+                background-color: $grey-2;
+                padding: 5px;
+                border-radius: 5px;
+                color: $text;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+.application-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}

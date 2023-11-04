@@ -1,0 +1,68 @@
+.ads-job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30rem;
+    overflow: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    margin-right: 20px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .ad-container {
+        border: 1.5px solid $grey;
+        padding: 10px;
+        border-radius: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .ad-header {
+            align-items: flex-start;
+            justify-content: space-between;
+            display: flex;
+            gap: 10px;
+
+            .title {
+                @extend .title;
+                flex: 1;
+            }
+
+            .ad-type {
+                border: 1px solid $primary;
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+
+            button {
+                padding: 0;
+            }
+        }
+
+        .ad-description {
+            color: $description-text;
+            margin-top: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            white-space: pre-wrap;
+        }
+
+        .ad-date-created {
+            color: $description-text;
+            font-weight: 400;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+
+    .active {
+        border-color: $primary;
+    }
+}

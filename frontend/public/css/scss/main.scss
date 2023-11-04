@@ -1,0 +1,30 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+
+@import "base.scss";
+@import "global.scss";
+@import "typography.scss";
+
+@import "components/header.scss";
+@import "components/file-upload.scss";
+@import "components/loader.scss";
+@import "components/custom-modal.scss";
+@import "components/yes-no-dialog.scss";
+@import "components/select-control.scss";
+@import "components/custom-table.scss";
+@import "components/text-search-control.scss";
+@import "components/full-screen-modal.scss";
+@import "components/sort-filter.scss";
+@import "components/quill-editor-control.scss";
+@import "components/ad-details.scss";
+@import "components/ad-list.scss";
+@import "components/latest-searches.scss";
+@import "components/notifications.scss";
+@import "components/autocomplete-control.scss";
+@import "components/add-edit-user-form.scss";
+
+@import "pages/login.scss";
+@import "pages/register.scss";
+@import "pages/profile.scss";
+@import "pages/home.scss";
+@import "pages/ad-placement.scss";
+@import "pages/my-ads.scss";

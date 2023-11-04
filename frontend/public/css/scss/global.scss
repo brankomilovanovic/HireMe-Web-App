@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $text;
+    background: $white;
+    margin: 0;
+}
+
+#root {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.mui-shifted-label-input{
+    .MuiInputLabel-root{
+      margin-top: -25px;
+      transform: scale(1);
+      font-weight: inherit;
+      color: $black !important;
+      &.Mui-focused {
+        color: $black;
+      }
+    }
+
+    .Mui-error {
+      margin-left: 0;
+    }
+
+    .MuiOutlinedInput-root {
+      border: 1px solid $black;     
+      border-radius: 0.5rem;
+
+      &:hover {
+        border-color: $primary;
+      }
+    }
+    
+    .MuiOutlinedInput-input{
+      border:none;
+    }
+  
+    .MuiOutlinedInput-notchedOutline{
+      border: none;
+    } 
+}
+
+a {
+  text-decoration: none;
+}
+
+.error {
+  color: $red;
+  font-size: 14px;
+}
+
+.link {
+  font-weight: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.white-img {
+  filter: invert(1);
+}
+
+.MuiDivider-root {
+  margin: 10px 0 !important;
+  border-width: 1px !important;
+}
+
+.button-primary {
+  background-color: $primary !important;    
+  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 1rem !important;
+
+  @media only screen and (max-width: $break-sm) {
+    font-size: 10px !important;
+    padding: 10px !important;
+  }
+}
+
+.icon-button-grey {
+  background-color: $grey-2;    
+  border-radius: 10px !important;
+}
+
+.one-liner {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.mui-adornment {
+  .MuiOutlinedInput-root {
+    padding-right: 0;
+  }
+
+  .MuiInputAdornment-root {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+
+    &:hover {
+      cursor:pointer;
+    }
+  }
+}

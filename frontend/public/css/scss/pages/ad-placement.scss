@@ -1,0 +1,28 @@
+.ad-placement {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 90%;
+
+    .ad-placement-form-inputs {
+        border: 1px solid $primary;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 50rem;
+
+        .fields-container {
+            display: flex;
+            gap: 10px;
+
+            .display-column-fields-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}

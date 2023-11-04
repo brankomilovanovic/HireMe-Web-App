@@ -1,0 +1,92 @@
+.autocomplete-wrapper {
+    display: flex;
+    align-items: center;
+
+    .MuiAutocomplete-root {
+        width: 100%;
+
+        &:hover {
+            border-color: $primary;
+            cursor: pointer;
+        }
+        .MuiFormControl-root {
+            .MuiInputBase-root {
+                border: 1px solid $black;
+                border-radius: 0.5rem;
+
+                &:hover {
+                    border-color: $primary;
+                }
+
+                input {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .add-button {
+        background: $primary;
+        height: 46px;
+        min-width: 46px;
+        margin-left: 10px;
+    }
+}
+
+.autocomplete {
+    label {
+        top: 0 !important;
+    }
+   .MuiButtonBase-root{
+       margin-top: 0 !important;
+   }
+}
+
+.text-autocomplete {
+    .MuiAutocomplete-endAdornment{
+        display: none !important;
+    }
+}
+
+.autocomplete-board-view {
+    width: 60%;
+    border-radius: 10px;
+    margin: 0 !important;
+
+    .MuiAutocomplete-root {
+        .MuiFormControl-root {
+            margin: 0 !important;
+            .MuiInputBase-root {
+                border-radius: 10px;
+                height: 38px !important;
+                display: flex;
+                input {
+                    width: 100% !important;
+                }
+
+                .MuiAutocomplete-endAdornment {
+                    height: 100% !important;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: flex;
+
+                    .MuiAutocomplete-clearIndicator {
+                        background: transparent !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        height: 100% !important;
+                    }
+                    .MuiAutocomplete-popupIndicator {
+                        display: none;
+                        background: transparent !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

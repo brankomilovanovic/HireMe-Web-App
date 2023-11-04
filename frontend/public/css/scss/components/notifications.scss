@@ -1,0 +1,229 @@
+.header-popup-menu {
+    z-index: 10000;
+    
+    .MuiList-root {
+        padding: 0;
+    }
+
+    .MuiMenuItem-root {
+        font-family: 'Nobile', sans-serif;
+    }
+
+    &.profile-menu {
+
+        .MuiPaper-root {
+            border-radius: 5px !important;
+        }
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 10px;
+            margin-bottom: 5px;
+
+            .name {
+                font-size: 14px;
+                color: black;
+                padding-top: 15px;
+                margin-bottom: 3px;
+    
+                &:hover, &.Mui-focusVisible {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+            }
+        
+            .email {
+                color:#545F7F;
+                font-size: 12px;
+                margin-bottom: 6px;
+            }
+        
+            .user-type {
+                color: mediumblue;
+                font-size: 12px;
+            }
+        }
+    
+        .link {
+    
+            &.logout {
+                padding-bottom: 10px;
+            }
+    
+            .link-text {
+                padding-left: 0;
+    
+                .MuiTypography-root {
+                    font-size: 12px;
+                    color: #393533;
+                }
+            }
+        }
+    }
+
+    &.notification-menu {
+
+        li {
+            cursor: default !important;
+            pointer-events: none !important;
+        }
+
+        .MuiPaper-root {
+            border-radius: 10px !important;
+        }
+
+        .notifications-header {
+            display: flex;
+            justify-content: space-between;
+            background: $primary;
+            padding: 10px 25px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            span {
+                color: white;
+                font-size: 13px;
+
+                &.all-read-link {
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .all-activity {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            font-size: 13px;
+
+            &:hover {
+                background-color: #ecebeb;
+                cursor: pointer;
+            }
+        }
+
+        .list {
+            height: auto;
+
+            div:nth-of-type(1n+8) {
+                display: none;
+            } 
+
+            .notification {
+                display: flex;
+                align-items: center;
+                width: auto;
+                padding: 0;
+
+                font-family: "Roboto","Helvetica","Arial",sans-serif;
+                line-height: 1.5;
+                letter-spacing: 0.00938em;
+                padding-left: 5px;
+
+                &:hover {
+                    background-color: #ecebeb;
+                    cursor: pointer;
+                }
+
+                .content-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(100% - 6px);
+                    padding-right: 10px;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+    
+                    .content {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        width: calc(100%);
+                        padding: 5px 0;
+    
+                        .profile {
+                            width: 150px;
+                            margin-right: 5px;
+                            display: flex;
+                            align-items: center;
+    
+                            .name {
+                                @extend .one-liner;
+                                font-size: 11px;
+                                margin-left: 5px;
+                            }
+                        }
+            
+                        .text {
+                            display: flex;
+                            flex-direction: column;
+                            width: calc(100% - 150px);
+                            margin-right: 20px;
+                          
+                            .notification-text {
+                                margin: 0;
+                                font-size: 12px;
+
+                                a {
+                                    @extend .notification-text;
+
+                                    &:hover {
+                                        text-decoration: revert;
+                                    }
+                                }
+                            }
+            
+                            .created {
+                                font-size: 11px;
+                                color: #aaa;
+
+                                &.active {
+                                    color: $primary;
+                                }
+                            }
+                        }
+                    }
+    
+                    .notification-border {
+                        height: 1px;
+                        background: #D4D4D4;
+                        width: calc(100%);
+                    }
+                }
+    
+                .notification-dot {
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: transparent;
+                    position: relative;
+                    margin-left: -25px;
+                    
+                    &.active {
+                        background: mediumblue;
+                    }
+                }
+            }
+        }
+
+        .see-all-link {
+            font-size: 10px;
+            text-align: center;
+            color: $text;
+            padding: 10px 0px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

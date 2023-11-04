@@ -1,0 +1,52 @@
+.quill-editor-control {  
+    height: 200px;
+    width: 100%;
+
+    .Mui-error {
+        color: $black
+    }
+
+    .quill {
+        height: 100%;
+        border: 1px solid $black;
+        border-radius: 0.5rem;
+
+        &:hover {
+            border-color: $primary;
+        }
+
+        .ql-toolbar.ql-snow {
+            border: none;
+            border-bottom: 1px solid $grey;
+        }
+
+        .ql-container {
+            height: 80%;
+            border: none;
+            @media screen and (max-width: $break-md) {
+                max-height: 70%;
+              }
+        }
+    }
+}
+
+.quill-label {
+    margin-top: -25px;
+    transform: scale(1);
+    font-weight: inherit;
+    color: $black !important;
+    margin-bottom: 3px;
+
+    .tooltip-info:hover {
+        cursor: pointer;
+    }
+}
+
+.error-message {
+    font-size: 0.75rem;
+    line-height: 1.66;
+    color: $red;
+    letter-spacing: 0.03333em;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
